@@ -160,16 +160,18 @@ elements though"
 	      :initial-element 0.0d0))
 
 
+(defparameter *gg* (create-gg-array))
+(defparameter *g-0* (g-0))
+
 
 (defun rr-cross-section (e-kin q Z
-			 &optional (gg (create-gg-array))
-				   (g-0 (g-0)))
+			 &optional (gg *gg*)
+				   (g-0 *g-0*))
     
   "compute radiative recombination cross section for ... fixme "
-  
   (declare (inline create-gg)
 	   (optimize (speed 3) (space 3) (safety 1))
-	   (type (double-float) e-kin)
+	   (type (double-float 0d0) e-kin)
 	   (type (integer 0 200) q Z))
   
   (let* ((ry 13.605698d0)
