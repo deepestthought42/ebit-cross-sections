@@ -1,0 +1,5 @@
+* EBIT Cross Sections
+This is a lisp package to calculate radiative recombination and ionization cross sections
+for the interaction of ions with (mono-energetic) electrons. 
+
+(c) Renee Klawitter, 2015-2018
